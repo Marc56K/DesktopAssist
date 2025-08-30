@@ -28,33 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            outputTextBox = new TextBox();
-            updateTimer = new System.Windows.Forms.Timer(components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            OutputTextBox = new TextBox();
             SuspendLayout();
             // 
-            // outputTextBox
+            // OutputTextBox
             // 
-            outputTextBox.Dock = DockStyle.Fill;
-            outputTextBox.Location = new Point(0, 0);
-            outputTextBox.Multiline = true;
-            outputTextBox.Name = "outputTextBox";
-            outputTextBox.ScrollBars = ScrollBars.Vertical;
-            outputTextBox.Size = new Size(800, 450);
-            outputTextBox.TabIndex = 0;
-            // 
-            // updateTimer
-            // 
-            updateTimer.Tick += updateTimer_Tick;
+            OutputTextBox.Dock = DockStyle.Fill;
+            OutputTextBox.Location = new Point(0, 0);
+            OutputTextBox.Multiline = true;
+            OutputTextBox.Name = "OutputTextBox";
+            OutputTextBox.ScrollBars = ScrollBars.Vertical;
+            OutputTextBox.Size = new Size(800, 451);
+            OutputTextBox.TabIndex = 0;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(outputTextBox);
+            ClientSize = new Size(800, 451);
+            Controls.Add(OutputTextBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "DesktopAssist - SpellChecker";
+            WindowState = FormWindowState.Minimized;
             FormClosing += MainForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
@@ -62,7 +59,6 @@
 
         #endregion
 
-        private TextBox outputTextBox;
-        private System.Windows.Forms.Timer updateTimer;
+        private TextBox OutputTextBox;
     }
 }

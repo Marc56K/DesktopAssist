@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AssistApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OllamaURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://127.0.0.1:11434</Value>
+    </Setting>
+    <Setting Name="Model" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">llama3.2:latest</Value>
+    </Setting>
+    <Setting Name="CopyPasteDelay" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="P0_SystemPrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fix spelling of the following text and only return the fixed text without any additional quotes, explanations, or formatting: [TEXT]</Value>
+    </Setting>
+    <Setting Name="P0_HotKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CTRL+SHIFT+Q</Value>
+    </Setting>
+    <Setting Name="P1_HotKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CTRL+SHIFT+W</Value>
+    </Setting>
+    <Setting Name="P1_SystemPrompt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fix spelling and wording of the following text and only return the fixed text without any additional quotes, explanations, or formatting: [TEXT]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
